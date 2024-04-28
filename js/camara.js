@@ -2,6 +2,9 @@
 
 const btnCapturar = document.querySelector("button#btnCapturar")
 const imagen = document.querySelector("img#imgCamera")
+const formulario = document.querySelector(".formulario")
+
+const canvaElem = document.querySelector(".canvaElem")
 
 const inputCamera = document.createElement("input")
     inputCamera.type = "file"
@@ -9,28 +12,21 @@ const inputCamera = document.createElement("input")
     inputCamera.accept = "camera"
     inputCamera.capture = "environment-facing"
 
-btnCapturar.addEventListener("click", ()=> {
+
+btnCapturar.addEventListener("click", (e)=> {
+    //evita que se envie el formulario
+    e.preventDefault()
     inputCamera.click()
     
 })
 
+//muestra la foto FE
 inputCamera.addEventListener("change", ()=> {
     if (inputCamera.value !== "") {
-    
-      
         imagen.src = URL.createObjectURL(inputCamera.files[0]) // BLOB: Big Large OBject
-        console.log(imagen)
     }
 })
 
-function convertirImagenAbase64() {
-    const canvas = document.createElement("canvas")
-          canvas.width = imagen.width
-          canvas.height = imagen.height
-    const ctx = canvas.getContext("2d")
-          ctx.drawImage(imagen, 0, 0, imagen.width, imagen.height)
-          // document.querySelector("body").appendChild(canvas)
-          return canvas.toDataURL("image/jpeg")    
-}
 
-console.log(convertirImagenAbase64())
+
+//console.log(convertirImagenAbase64())

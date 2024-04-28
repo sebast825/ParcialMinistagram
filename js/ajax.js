@@ -2,7 +2,7 @@ const btnGuardar = document.querySelector("button#btnGuardar")
 
 
 const URLproductos = "https://66252bda04457d4aaf9e131e.mockapi.io/api/v1/productos"
-
+/*
 function retornarFilaHTML(producto) {
     return `<tr>
                 <td>${producto.id}</td>
@@ -44,12 +44,14 @@ function obtenerProductos() {
        })
    })
 }
+*/
 
-
-btnGuardar.addEventListener("click", ()=> { // debemos realizar la validación de datos: OK
+function guardarFoto (data){ // debemos realizar la validación de datos: OK
+    console.log(data)
    const nuevoProducto = {
-       nombre: "inputNombre.value.trim()",
-       emoji: "inputImagen.value.trim()",
+       imagen: data.imagen,
+       fecha: data.fecha,
+       titulo: data.titulo
       
    }
 console.log("asd")
@@ -80,4 +82,9 @@ console.log("asd")
            close: true
        })
    })
-})
+}
+
+
+
+
+
