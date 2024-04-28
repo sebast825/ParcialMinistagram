@@ -1,8 +1,13 @@
-const btnEnviar = document.querySelector("button");
+//const btnEnviar = document.querySelector("button");
 //const formulario = document.querySelector("formulario")
 const inputNombre = document.querySelector("#inputNombre");
+const btnCancelar = document.querySelector(".btnCancelar");
 
 
+btnCancelar.addEventListener("click", ()=>{
+    window.location.href = "./index.html"
+
+})
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
 
