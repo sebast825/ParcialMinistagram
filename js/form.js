@@ -5,8 +5,7 @@ const btnCancelar = document.querySelector(".btnCancelar");
 
 
 btnCancelar.addEventListener("click", ()=>{
-    window.location.href = "./index.html"
-
+    window.location.href = "./index.html";
 })
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -18,6 +17,8 @@ formulario.addEventListener("submit", (e) => {
     titulo: inputNombre.value,
   };
   guardarFoto(data);
+  window.location.href = "./index.html";
+
 });
 
 function convertirImagenAbase64() {

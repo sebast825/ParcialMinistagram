@@ -6,22 +6,44 @@
    <title>Ministagram</title>
 <link rel="stylesheet" href="styles.css">
 <script src="js/toastitv1.0-cdn-min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 
 </head>
 <body>
-   <header>
-      <h1>Cámara Web</h1>
-      <hr>
-  </header>
+   <nav class="navbar navbar-expand-lg  bg-tres">
+      <div class="container">
+        <a class="navbar-brand text-light" >MiniInstagram</a>
+      </div>
+   </nav>
   <main>
-   <button id="nuevaFoto">NuevaFoto</button>
-   <div class="container"></div>
+  
+
+   <!-- <button id="nuevaFoto">NuevaFoto</button> -->
+   <div class="containerFotos container bg-uno "></div>
+   
       <!-- <img id="imgCamera" src=""> -->
-      <canvas width="100" height="100"></canvas>
+      <!-- <canvas width="100" height="100"></canvas> -->
        <!-- <input type="file" name="" id="inputFile" multiple accept="camera .jpg" capture="environment-facing"> -->
 
   </main>
+  <footer class="footer fixed-bottom bg-dos">
+   <div class="container containerImg">
+      <a class="navbar-brand" id="nuevaFoto" >
+         <img src="img/placeholder.jpg" alt="Logo" class="img-fluid">
+
+      </a>
+
+   </div>
+ </footer>
 <script src="js/mostrarFotos.js"></script>
   <script src="js/ajax.js"></script>
   <script src="js/script.js"></script>

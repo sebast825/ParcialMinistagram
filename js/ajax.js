@@ -1,16 +1,21 @@
-const containerFotos = document.querySelector(".container");
+const containerFotos = document.querySelector(".containerFotos");
 
 const URLproductos =
   "https://66252bda04457d4aaf9e131e.mockapi.io/api/v1/productos";
 let productos = [];
 
 function retornarFilaHTML(data) {
-  return `<div>
-            <p>${data.fecha}</p>
-            <p>${data.titulo}</p>
-            <img src='${data.imagen}' alt=''> 
-           
-            </div>`;
+  return `
+  <div class="card mt-4 ">
+  <div class="card-body bg-uno text-white">
+    <h5 class="card-title">${data.titulo}</h5>
+    <img src="${data.imagen}" class="card-img-top" alt="Imagen">
+    <p class="card-text mt-3">${data.fecha}</p> <!-- Agrega mt-3 para un margen superior de tamaño 3 -->
+  </div>
+</div>
+
+  
+  `;
 }
 
 function obtenerProductos() {
