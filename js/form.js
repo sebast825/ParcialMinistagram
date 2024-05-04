@@ -1,5 +1,3 @@
-//const btnEnviar = document.querySelector("button");
-//const formulario = document.querySelector("formulario")
 const inputNombre = document.querySelector("#inputNombre");
 const btnCancelar = document.querySelector(".btnCancelar");
 
@@ -17,7 +15,6 @@ formulario.addEventListener("submit", (e) => {
     titulo: inputNombre.value,
   };
   guardarFoto(data, () => {
-    // Esta función se llama cuando se completa el guardado de la foto
     window.location.href = "./index.html";
   });
 

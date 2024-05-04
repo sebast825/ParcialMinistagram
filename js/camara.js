@@ -1,5 +1,3 @@
-// <input type="file" name="" id="inputFile" multiple accept="camera" capture="user">
-
 const btnCapturar = document.querySelector("button#btnCapturar")
 const imagen = document.querySelector("img#imgCamera")
 const formulario = document.querySelector(".formulario")
@@ -14,7 +12,6 @@ const inputCamera = document.createElement("input")
 
 
 btnCapturar.addEventListener("click", (e)=> {
-    //evita que se envie el formulario
     e.preventDefault()
     inputCamera.click()
     
@@ -29,4 +26,3 @@ inputCamera.addEventListener("change", ()=> {
 
 
 
-//console.log(convertirImagenAbase64())
