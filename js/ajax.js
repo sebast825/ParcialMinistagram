@@ -16,18 +16,7 @@ function retornarFilaHTML(data) {
 
   `;
 }
-function retornarFotoDefault() {
-  return `
-  <div class="card mt-4 ">
-  <div class="card-body bg-uno text-white">
-    <h5 class="card-title">Pepe</h5>
-    <img src="img/sapo.jpg" class="card-img-top" alt="Imagen">
-    <p class="card-text mt-3">Desde los comienzos estuvo, no hay fecha.</p> <!-- Agrega mt-3 para un margen superior de tamaño 3 -->
-  </div>
-</div>
 
-  `;
-}
 function obtenerProductos() {
   fetch(URLproductos)
     .then((response) => {
@@ -40,20 +29,17 @@ function obtenerProductos() {
     })
     .then((data) => {
       productos.push(...data);
-      console.log(productos.length  > 0)
-      console.log(productos);
+      productos.reverse();
     })
     .then(() => {
       if (productos.length > 0) {
-        console.log("aca")
+        containerFotos.innerHTML ="";
         productos.forEach(
           (producto) => (containerFotos.innerHTML += retornarFilaHTML(producto))
         )
         
       }
-      else{
-        containerFotos.innerHTML += retornarFotoDefault()
-      }
+    
     })
     .catch((error) => {
       ToastIt.now({
