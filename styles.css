@@ -7,17 +7,18 @@
 .bg-tres{
    background-color: #3B8C66;
 }
+
 .containerImg{
-   margin: 1rem;
    display: flex;
    align-items: center;
-
+height: 60px!important;
    justify-content: center;
 }
 
 .containerImg img{
-   width: 80px;
-   border-radius: 10%;
+   width: 40px;
+   filter: invert(1);
+
 
 }
 
@@ -55,3 +56,4 @@ display: block;
    object-fit: contain;
   
 }
+
