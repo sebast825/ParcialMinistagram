@@ -16,8 +16,10 @@ formulario.addEventListener("submit", (e) => {
     fecha: obtenerFechaHoraActual(),
     titulo: inputNombre.value,
   };
-  guardarFoto(data);
-  // window.location.href = "./index.html";
+  guardarFoto(data, () => {
+    // Esta función se llama cuando se completa el guardado de la foto
+    window.location.href = "./index.html";
+  });
 
 });
 

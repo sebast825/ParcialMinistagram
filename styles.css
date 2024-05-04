@@ -1,72 +1,68 @@
-.bg-uno,body{
-   background-color: #223240!important;
+.bg-uno,
+body {
+  background-color: #223240 !important;
 }
-.bg-dos{
-   background-color: #347355;
+.bg-dos {
+  background-color: #347355;
 }
-.bg-tres{
-   background-color: #3B8C66;
-}
-
-.containerImg{
-   display: flex;
-   align-items: center;
-height: 60px!important;
-   justify-content: center;
+.bg-tres {
+  background-color: #3b8c66;
 }
 
-.containerImg img{
-   width: 40px;
-   filter: invert(1);
-
-
-}
-.containerImg img:hover{
-   cursor: pointer;
+.containerImg {
+  display: flex;
+  align-items: center;
+  height: 60px !important;
+  justify-content: center;
 }
 
-.containerFotos{
-      display: flex;
-      align-items: center;
-      justify-content: center;
-   flex-wrap: wrap;
-   margin-bottom: 7rem!important;
-   flex-direction: column;
-
-   gap: 3rem;
-   @media screen  and (max-width: 600px){
-   gap: 1rem;
-   }
+.containerImg img {
+  width: 40px;
+  filter: invert(1);
+}
+.containerImg img:hover {
+  cursor: pointer;
 }
 
-.card-body{
-   padding: 5px!important;
-   border-bottom: 1px solid white;
-}
-.card{
-   border: none!important;
-   width: 600px!important;
-   min-height: 500px!important;
+.containerFotos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 7rem !important;
+  flex-direction: column;
 
-display: block;
-   @media screen  and (max-width: 600px){
-    width: 300px!important;
-    min-height: auto!important;
-
-   }
+  gap: 3rem;
+  @media screen and (max-width: 600px) {
+    gap: 1rem;
+  }
 }
-.card img{
-   object-fit: contain;
-  
+
+.card-body {
+  padding: 5px !important;
+  border-bottom: 1px solid white;
+}
+.card {
+  border: none !important;
+  width: 600px !important;
+  min-height: 500px !important;
+
+  display: block;
+  @media screen and (max-width: 600px) {
+    width: 300px !important;
+    min-height: auto !important;
+  }
+}
+.card img {
+  object-fit: contain;
 }
 
 /*fomr*/
 
-#imgCamera{
-   max-height: 600px;
+#imgCamera {
+  max-height: 600px;
 
-   @media screen  and (max-width: 600px){
-
-   max-height: 300px;
-   }
+  @media screen and (max-width: 600px) {
+    max-height: 300px;
+  }
 }
