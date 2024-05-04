@@ -21,6 +21,9 @@ height: 60px!important;
 
 
 }
+.containerImg img:hover{
+   cursor: pointer;
+}
 
 .containerFotos{
       display: flex;
@@ -57,3 +60,13 @@ display: block;
   
 }
 
+/*fomr*/
+
+#imgCamera{
+   max-height: 600px;
+
+   @media screen  and (max-width: 600px){
+
+   max-height: 300px;
+   }
+}
