@@ -14,7 +14,7 @@ function convertirImagenAbase64(img = imagen) {
    const ctx = canvas.getContext("2d");
    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
    // document.querySelector("body").appendChild(canvas)
-   return canvas.toDataURL("image/jpeg");
+   return canvas.toDataURL("image/webp");
  }
 
 

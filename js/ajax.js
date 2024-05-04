@@ -86,3 +86,5 @@ function guardarFoto(data) {
       });
     });
 }
+
+

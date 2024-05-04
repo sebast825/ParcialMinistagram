@@ -17,7 +17,7 @@ formulario.addEventListener("submit", (e) => {
     titulo: inputNombre.value,
   };
   guardarFoto(data);
-  window.location.href = "./index.html";
+  // window.location.href = "./index.html";
 
 });
 
@@ -28,7 +28,7 @@ function convertirImagenAbase64() {
   const ctx = canvas.getContext("2d");
   ctx.drawImage(imagen, 0, 0, imagen.width, imagen.height);
   // document.querySelector("body").appendChild(canvas)
-  return canvas.toDataURL("image/jpeg");
+  return canvas.toDataURL("image/webp");
 }
 
 function obtenerFechaHoraActual() {
