@@ -21,15 +21,7 @@ formulario.addEventListener("submit", (e) => {
 
 });
 
-function convertirImagenAbase64() {
-  const canvas = document.createElement("canvas");
-  canvas.width = imagen.width;
-  canvas.height = imagen.height;
-  const ctx = canvas.getContext("2d");
-  ctx.drawImage(imagen, 0, 0, imagen.width, imagen.height);
-  // document.querySelector("body").appendChild(canvas)
-  return canvas.toDataURL("image/webp");
-}
+
 
 function obtenerFechaHoraActual() {
   const fechaHoraActual = new Date();
